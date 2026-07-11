@@ -27,7 +27,7 @@ export default function Contact() {
 
   const contactMethods = [
     { icon: Mail, label: "Email", value: personalInfo.details.email, href: `mailto:${personalInfo.details.email}` },
-    { icon: Phone, label: "Phone", value: "+880 1700 000000", href: "tel:+8801700000000" }, // Placeholder phone
+    { icon: Phone, label: "Phone", value: "+880 1521 231818", href: "tel:+8801521231818" }, // Placeholder phone
     { icon: MapPin, label: "Location", value: personalInfo.details.location },
   ];
 
