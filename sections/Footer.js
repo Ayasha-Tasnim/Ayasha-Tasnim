@@ -5,10 +5,14 @@ import { Github, Linkedin, Facebook } from "@/components/Icons";
 import { personalInfo } from "@/lib/data";
 
 const socialsList = [
-  { icon: Github, href: personalInfo.socials.github, label: "GitHub" },
-  { icon: Linkedin, href: personalInfo.socials.linkedin, label: "LinkedIn" },
-  { icon: Facebook, href: personalInfo.socials.facebook, label: "Facebook" },
-  { icon: Mail, href: `mailto:${personalInfo.socials.email}`, label: "Email" }
+  { icon: Github, href: personalInfo.socials.github, label: 'GitHub' },
+  { icon: Linkedin, href: personalInfo.socials.linkedin, label: 'LinkedIn' },
+  { icon: Facebook, href: personalInfo.socials.facebook, label: 'Facebook' },
+  {
+    icon: Mail,
+    href: 'https://mail.google.com/mail/?view=cm&fs=1&to=ayashatasnim291@gmail.com',
+    label: 'Email',
+  },
 ];
 
 export default function Footer() {
