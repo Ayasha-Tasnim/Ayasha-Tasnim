@@ -8,7 +8,7 @@ import { personalInfo } from "@/lib/data";
 
 export default function Contact() {
   const [formData, setFormData] = useState({ name: "", email: "", subject: "", message: "" });
-  const [status, setStatus] = useState("idle"); // idle | sending | success
+  const [status, setStatus] = useState("idle");
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -18,7 +18,6 @@ export default function Contact() {
     e.preventDefault();
     setStatus("sending");
     
-    // Simulate API request delay
     setTimeout(() => {
       setStatus("success");
       setFormData({ name: "", email: "", subject: "", message: "" });
